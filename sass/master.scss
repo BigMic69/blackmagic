@@ -1,0 +1,26 @@
+/*!
+Web Designer: BigMic69
+Webpage: MCCGraphics.info
+*/
+
+@import "compass";
+@import "compass/reset";
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display|Ubuntu');
+
+@import "parts/toolbox";
+@import "parts/base";
+@import "parts/header";
+<<<<<<< HEAD
+@import "parts/section1";
+// @import "parts/main";
+
+
+// SPRITE IMPORTS
+// @import "compass/utilities/sprites";
+// @import "social-icons/*.png";
+// @include all-social-icons-sprites;
+=======
+@import "parts/nav";
+@import "parts/main";
+>>>>>>> parent of 84470d4... Default Commit

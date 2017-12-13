@@ -1,0 +1,41 @@
+*
+  font-size: 16px
+  letter-spacing: 1.125px
+  line-height: 1.8em
+  box-sizing: border-box
+
+body
+  position: relative
+  +box-fluid
+  margin: 0
+  padding-bottom: 20vh
+  color: #fff
+  background: #171717
+
+#bgWrap
+  position: relative
+  +box-fluid
+  .bg-img
+    position: fixed
+    top: 0
+    width: 100vw
+    height: 96vh
+    +no-cush
+    // background-image: url('../img/dark-room-1.jpg')
+    background-size: 50% auto
+    background-position: center
+    background-repeat: no-repeat
+    z-index: -1
+
+main
+  position: relative
+
+footer
+  position: fixed
+  bottom: 0
+  padding: 10px
+  background: rgba(#282828, .5)
+  border: thin solid #f2f2f2
+  a
+    color: #e8e8e8
+    text-shadow: .5px .5px $clr-orange
