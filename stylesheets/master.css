@@ -1,47 +1,296 @@
-/*
-Error: Invalid CSS after "...parts/section1"": expected "{", was ";"
-        on line 15 of C:/wamp64/www/black-magic-1/sass/master.scss
-
-10: 
-11: @import "parts/toolbox";
-12: @import "parts/base";
-13: @import "parts/header";
-14: <<<<<<< HEAD
-15: @import "parts/section1";
-16: // @import "parts/main";
-17: 
-18: 
-19: // SPRITE IMPORTS
-20: // @import "compass/utilities/sprites";
-
-Backtrace:
-C:/wamp64/www/black-magic-1/sass/master.scss:15
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/*!
+Web Designer: BigMic69
+Webpage: MCCGraphics.info
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...parts/section1\"\": expected \"{\", was \";\"\A         on line 15 of C:/wamp64/www/black-magic-1/sass/master.scss\A \A 10: \A 11: @import \"parts/toolbox\";\A 12: @import \"parts/base\";\A 13: @import \"parts/header\";\A 14: <<<<<<< HEAD\A 15: @import \"parts/section1\";\A 16: // @import \"parts/main\";\A 17: \A 18: \A 19: // SPRITE IMPORTS\A 20: // @import \"compass/utilities/sprites\";"; }
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display|Ubuntu");
+/* line 5, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 88, ../sass/parts/_toolbox.sass */
+h1 {
+  font-size: 2em;
+}
+@media (min-width: 700px) {
+  /* line 88, ../sass/parts/_toolbox.sass */
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 92, ../sass/parts/_toolbox.sass */
+h2 {
+  font-size: 1.75em;
+}
+@media (min-width: 700px) {
+  /* line 92, ../sass/parts/_toolbox.sass */
+  h2 {
+    font-size: 2.25em;
+  }
+}
+
+/* line 96, ../sass/parts/_toolbox.sass */
+h3 {
+  font-size: 1.25em;
+}
+@media (min-width: 700px) {
+  /* line 96, ../sass/parts/_toolbox.sass */
+  h3 {
+    font-size: 2em;
+  }
+}
+
+/* line 100, ../sass/parts/_toolbox.sass */
+h4 {
+  font-size: 1.25em;
+}
+@media (min-width: 700px) {
+  /* line 100, ../sass/parts/_toolbox.sass */
+  h4 {
+    font-size: 1.75em;
+  }
+}
+
+/* line 104, ../sass/parts/_toolbox.sass */
+h5 {
+  font-size: 1em;
+}
+@media (min-width: 700px) {
+  /* line 104, ../sass/parts/_toolbox.sass */
+  h5 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 108, ../sass/parts/_toolbox.sass */
+a,
+p {
+  font-size: 1em;
+}
+@media (min-width: 700px) {
+  /* line 108, ../sass/parts/_toolbox.sass */
+  a,
+  p {
+    font-size: 1.5em;
+  }
+}
+
+/* line 1, ../sass/parts/_base.sass */
+* {
+  font-size: 16px;
+  letter-spacing: 1.125px;
+  line-height: 1.8em;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/parts/_base.sass */
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 20vh;
+  color: #fff;
+  background: #171717;
+}
+
+/* line 15, ../sass/parts/_base.sass */
+#bgWrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 18, ../sass/parts/_base.sass */
+#bgWrap .bg-img {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 96vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: 50% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* line 30, ../sass/parts/_base.sass */
+main {
+  position: relative;
+}
+
+/* line 33, ../sass/parts/_base.sass */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(40, 40, 40, 0.5);
+  border: thin solid #f2f2f2;
+}
+/* line 39, ../sass/parts/_base.sass */
+footer a {
+  color: #e8e8e8;
+  text-shadow: 0.5px 0.5px #e33d00;
+}
+
+/* line 1, ../sass/parts/_header.sass */
+header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 20vh 0;
+  padding: 20vh 0;
+  background-image: url("../img/black-mesh-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom: 1px solid #b2b2b2;
+}
+/* line 10, ../sass/parts/_header.sass */
+header .title {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(34, 34, 34, 0.7);
+  border: 2px solid #222;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #fff;
+}
+/* line 21, ../sass/parts/_header.sass */
+header .title h4 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+  text-shadow: 0.7px 0.7px #272727;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #272727;
+  background: linear-gradient(to right, #ffffff, rgba(34, 34, 34, 0.5) 15%, rgba(255, 255, 255, 0.4), rgba(34, 34, 34, 0.5) 85%, #ffffff);
+}
+/* line 29, ../sass/parts/_header.sass */
+header .title h4 b {
+  color: #222;
+  font-weight: 600;
+  text-shadow: 0.7px 0.7px #f8f8f8;
+}
+/* line 34, ../sass/parts/_header.sass */
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/parts/_section1.sass */
+#section1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/parts/_section1.sass */
+#designsTop {
+  width: 90%;
+  padding: 10vh 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+@media (min-width: 700px) {
+  /* line 4, ../sass/parts/_section1.sass */
+  #designsTop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* line 13, ../sass/parts/_section1.sass */
+#designsTop img {
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+/* line 17, ../sass/parts/_section1.sass */
+.text-box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #dddddd;
+}
+/* line 22, ../sass/parts/_section1.sass */
+.text-box p {
+  color: #262626;
+}
