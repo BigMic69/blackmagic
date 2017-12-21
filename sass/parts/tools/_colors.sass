@@ -1,0 +1,26 @@
+/* ---------- COLORS ---------- */
+$clr-light-grey: #e4e4e4
+$clr-light-grey-half: rgba(#e4e4e4, 0.50)
+$clr-med-grey: #333333
+$clr-med-grey-half: rgba(#333333, 0.50)
+$clr-dark-blue: #0d0d13
+$clr-dark-blue-half: rgba(#0c0e16, 0.15)
+$clr-orange: #ef0003
+$clr-orange-half: rgba(#ef0003, 0.5)
+$clr-burgundy: #1c0103
+
+
+$clr-border-primary: $clr-light-grey
+$clr-border-secondary: $clr-orange
+
+
+@mixin txtShadow($shadow-clr)
+  text-shadow: .8px .8px $shadow-clr
+@mixin outline-orange
+  border: thin solid $clr-orange
+@mixin para-shadow-1
+  text-shadow: 1px 1px 1px $clr-orange
+@mixin shadow-5-color($color)
+  box-shadow: 1px 1px 5px $color
+@mixin bg-gradient
+  background: linear-gradient(to right, #fff, rgba(#222, .5) 15%, rgba(#fff, .4), rgba(#222, .5) 85%, #fff)

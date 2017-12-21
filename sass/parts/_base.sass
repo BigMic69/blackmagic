@@ -1,7 +1,7 @@
 *
   font-size: 16px
   letter-spacing: 1.125px
-  line-height: 1.8em
+  line-height: calc(2em + 1vh)
   box-sizing: border-box
 
 body
@@ -12,6 +12,7 @@ body
   color: #fff
   background: #171717
 
+// PAGE BG-FIXED
 #bgWrap
   position: relative
   +box-fluid
@@ -27,15 +28,40 @@ body
     background-repeat: no-repeat
     z-index: -1
 
+// MAIN AREA
 main
   position: relative
 
+// TEXT BOX CONTAINER
+.text-box
+  width: 90%
+  margin: 0 auto
+  padding: 4%
+  text-align: center
+  background: radial-gradient(rgba(#333, .9) 75%, $clr-light-grey)
+  border: 1px solid #222
+  border-radius: 10px
+  border: thin solid $clr-orange
+  box-shadow: 2px 2px 5px $clr-med-grey
+  +trans-1
+  &:hover
+    filter: invert(100%)
+  h3
+    margin: 0 auto 5vh
+  p
+    color: #f3f3f3
+    text-shadow: .3px .2px #e2e2e2
+
+// FOOTER AREA
 footer
   position: fixed
   bottom: 0
   padding: 10px
   background: rgba(#282828, .5)
-  border: thin solid #f2f2f2
+  border-top: thin solid #f2f2f2
+  border-right: thin solid #f2f2f2
   a
     color: #e8e8e8
-    text-shadow: .5px .5px $clr-orange
+    text-shadow: .4px .4px $clr-dark-blue
+    h6
+      font-size: calc(.7em + 1vw)

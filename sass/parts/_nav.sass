@@ -1,0 +1,45 @@
+nav
+  height: 10vh
+  padding-bottom: 10px
+
+.navbar-header
+  padding: 0 10px
+  // background: rgba(#333, .1)
+
+#myNavbar
+  +bg-gradient
+  a
+    margin: 0 5px 0
+    padding: 10px 20px
+    text-shadow: .4px .4px #222
+    box-shadow: 1px 1px 1px #fff
+    border-bottom: 2px solid #666
+    &:link
+      color: #fff
+      // background: #333 !important
+    &:hover
+      color: #292929
+      background: rgba(#f1f1f1, .6) !important
+      border-bottom: 2px solid $clr-orange
+    &:active
+      background: $clr-orange !important
+
+.navbar-brand
+  color: #222
+  text-shadow: .3px .3px $clr-orange
+  border-right: 1px solid #a1a1a1
+  border-bottom: 1px solid #a1a1a1
+  &:hover
+    color: #222
+    text-shadow: .3px .3px #fff
+
+.navbar-toggle
+  color: #333 !important
+  text-shadow: .5px .5px #fff
+  background: #555
+  &:hover
+    color: #f1f1f1 !important
+    background: #777
+  .icon-bar
+    color: #333 !important
+    z-index: 10

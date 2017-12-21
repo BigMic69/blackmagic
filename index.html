@@ -3,9 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <title>Black Magic</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/master.css">
+  <link rel="shortcut icon" href="img/logo-1.png">
 
 </head>
 
@@ -15,28 +20,42 @@
     <img src="img/dark-room-1.jpg" alt="" class="img-responsive bg-img">
   </div>
 
-  <nav class="navbar navbar-fixed-top navbar-inverse">
+  <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">MCCGraphics.info</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          MENU
+          <span class="icon-bar"></span>
+          <!-- <span class="icon-bar"></span>
+          <span class="icon-bar"></span> -->
+        </button>
+        <a class="navbar-brand" href="#">Black Magic</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Links
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <header>
-    <div class="title">
+  <header id="header">
+    <div id="headerTitle" class="title">
       <h4>WATCH THE <b>MAGIC</b> HAPPEN</h4>
+      <video class="logo-vid" src="./video/logo-vid.mp4" controls poster="img/logo-1.png">
+
+      </video>
     </div>
   </header>
 
@@ -48,28 +67,53 @@
 
       <!-- DESIGNS TOP IMG SECTION -->
       <div id="designsTop">
-        <img src="./img/facebook-cover-1.png" alt="" class="img-responsive">
-        <img src="./img/wp-quickscope.png" alt="" class="img-responsive">
-        <img src="./img/facebook-cover-3.png" alt="" class="img-responsive">
+        <div class="img-container">
+          <img id="cover1" src="./img/facebook-cover-1.png" alt="" class="img-responsive">
+          <img id="cover2" src="./img/facebook-cover-2.png" alt="" class="img-responsive">
+        </div><!-- / END -->
+        <div class="img-container">
+          <img id="quickScope" src="./img/wp-quickscope.png" alt="" class="img-responsive">
+          <img id="riverFront" src="./img/wp-riverfront.png" alt="" class="img-responsive">
+        </div><!-- / END -->
+        <div class="img-container">
+          <img id="cover3" src="./img/facebook-cover-3.png" alt="" class="img-responsive">
+          <img id="cover4" src="./img/facebook-cover-4.png" alt="" class="img-responsive">
+        </div><!-- / END -->
       </div>
 
+      <!-- TEXTBOX START -->
       <div class="text-box">
+        <h3>MCCGraphics.info</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium cum doloribus, neque perferendis ea obcaecati labore quaerat odio inventore itaque. Soluta quisquam nulla corporis, quod perspiciatis, tempora molestiae deleniti!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium cum doloribus, neque perferendis ea obcaecati labore quaerat odio inventore itaque. Soluta quisquam nulla corporis, quod perspiciatis, tempora molestiae deleniti!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae iure cumque possimus ex soluta.</p>
+        <h4 id="jsText"></h4>
       </div>
-
+    <hr>
     </section>
 
     <!-- SECTION2 CONTAINER -->
-    <section id="section2"></section>
+    <section id="section2">
+      <ul id="testMenu">
+        <li><a href="">Box-1</a></li>
+        <li><a href="">Box-2</a></li>
+        <li><a href="">Box-3</a></li>
+        <li><a href="">Box-4</a></li>
+      </ul>
+      <button id="btnPush">Push Me</button>
+      <div id="btnResult"></div>
 
+      <!-- <p id="playGround">Playground</p> -->
+    </section>
+    <h6 id="screenSize"></h6>
+    <h6 id="showDate"></h6>
   </main>
 
   <footer><a href="http://mccgraphics.info" target="_blank"><h6><span class="glyphicon glyphicon-copyright-mark"></span>2017 MCCGraphics.info </h6></a></footer>
 
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/transition.js"></script> -->
   <script src="js/myScript.js" charset="utf-8"></script>
 </body>
 

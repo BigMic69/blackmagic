@@ -1,0 +1,98 @@
+#section2
+  width: 100%
+  height: 90vh
+  margin: 0
+  padding: 5vh 20px
+  background-image: url('../img/wp-blue-ice.png')
+  // +bg-cover-fixed
+  background-size: 100% auto
+  background-position: center 80%
+  background-repeat: no-repeat
+  background-attachment: fixed
+  animation-name: bgChange
+  animation-duration: 20s
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+  animation-direction: alternate
+  @media (min-width: 700px)
+    background-size: 60% auto
+    background-position: center
+
+// SECTION BG CHANGE ==========
+@keyframes bgChange
+  0%
+    background-image: url('../img/wp-blue-ice.png')
+  100%
+    background-image: url('../img/wp-warehouse.png')
+  // 100%
+  //   background-image: url('../img/wp-blue-ice.png')
+
+// BOX GRID ==========
+#testMenu
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: repeat(2, 10vh)
+  grid-gap: 10px
+  padding: 10px
+  // min-height: 200px
+  background: $clr-orange
+  +bdr-1-style(#fff)
+  animation-name: clrChange
+  animation-duration: 20s
+  animation-timing-function: ease-in-out
+  animation-iteration-count: infinite
+  @media (min-width: 700px)
+    grid-template-columns: repeat(4, 1fr)
+  li
+    // display: flex
+    justify-content: center
+    align-items: center
+    background: #555
+    @media (min-width: 700px)
+      grid-row: span 2
+    a
+      width: 100%
+      color: #f7f7f7
+      background: #888
+      display: flex
+      justify-content: center
+
+@keyframes clrChange
+  0%
+    background: $clr-burgundy
+  25%
+    background: $clr-orange
+  50%
+    background: $clr-dark-blue
+  75%
+    background: $clr-light-grey
+  100%
+    background: $clr-burgundy
+
+
+// SCREEN SIZE SECTION ==========
+#screenSize
+  width: 50%
+  margin: 20vh auto 5vh
+  padding: 5px 0
+  background: linear-gradient(to right, #fff 2%, #333 10%, #333 90%, #fff 98%)
+  animation: widthChange 5s linear 0s infinite alternate
+
+@keyframes widthChange
+  0%
+    width: 75%
+    background: $clr-med-grey
+    border: thin solid $clr-light-grey
+  20%
+    color: #fff
+  35%
+    color: #262626
+  100%
+    width: 100%
+    color: #262626
+    background: $clr-light-grey
+    border: thin solid $clr-med-grey
+
+#btnResult
+  padding: 10px
+  background: rgba(#333, .8)
