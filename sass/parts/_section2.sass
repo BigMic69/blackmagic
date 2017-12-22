@@ -1,6 +1,6 @@
 #section2
   width: 100%
-  height: 90vh
+  min-height: 100vh
   margin: 0
   padding: 5vh 20px
   background-image: url('../img/wp-blue-ice.png')
@@ -10,12 +10,12 @@
   background-repeat: no-repeat
   background-attachment: fixed
   animation-name: bgChange
-  animation-duration: 20s
+  animation-duration: 25s
   animation-timing-function: linear
   animation-iteration-count: infinite
   animation-direction: alternate
   @media (min-width: 700px)
-    background-size: 60% auto
+    background-size: auto 50%
     background-position: center
 
 // SECTION BG CHANGE ==========
@@ -73,7 +73,7 @@
 // SCREEN SIZE SECTION ==========
 #screenSize
   width: 50%
-  margin: 20vh auto 5vh
+  margin: 10vh auto 5vh
   padding: 5px 0
   background: linear-gradient(to right, #fff 2%, #333 10%, #333 90%, #fff 98%)
   animation: widthChange 5s linear 0s infinite alternate

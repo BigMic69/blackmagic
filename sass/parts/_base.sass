@@ -56,12 +56,19 @@ main
 footer
   position: fixed
   bottom: 0
-  padding: 10px
+  padding: 5px 10px
   background: rgba(#282828, .5)
-  border-top: thin solid #f2f2f2
+  border-top: thin solid #333
   border-right: thin solid #f2f2f2
+  +trans-0
+  &:hover
+    border-top: thin solid #f2f2f2
   a
-    color: #e8e8e8
-    text-shadow: .4px .4px $clr-dark-blue
+    color: #444
+    text-shadow: .5px .3px #fff
+    text-decoration: none !important
+    +trans-0
+    &:hover
+      color: #888 !important
     h6
       font-size: calc(.7em + 1vw)

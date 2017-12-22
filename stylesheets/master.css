@@ -131,20 +131,20 @@ h6 {
 @media (min-width: 700px) {
   /* line 21, ../sass/parts/tools/_fonts.sass */
   h6 {
-    font-size: calc(1.3em + 1vw);
+    font-size: calc(1.2em + 1vw);
   }
 }
 
-/* line 25, ../sass/parts/tools/_fonts.sass */
+/* line 26, ../sass/parts/tools/_fonts.sass */
 a,
 p {
   font-size: calc(1em + 1vw);
 }
 @media (min-width: 700px) {
-  /* line 25, ../sass/parts/tools/_fonts.sass */
+  /* line 26, ../sass/parts/tools/_fonts.sass */
   a,
   p {
-    font-size: calc(1.5em + 1vw);
+    font-size: calc(1.3em + 1vw);
   }
 }
 
@@ -230,17 +230,28 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  padding: 10px;
+  padding: 5px 10px;
   background: rgba(40, 40, 40, 0.5);
-  border-top: thin solid #f2f2f2;
+  border-top: thin solid #333;
   border-right: thin solid #f2f2f2;
+  transition: 0.5s ease 0.05s;
 }
-/* line 63, ../sass/parts/_base.sass */
-footer a {
-  color: #e8e8e8;
-  text-shadow: 0.4px 0.4px #0d0d13;
+/* line 64, ../sass/parts/_base.sass */
+footer:hover {
+  border-top: thin solid #f2f2f2;
 }
 /* line 66, ../sass/parts/_base.sass */
+footer a {
+  color: #444;
+  text-shadow: 0.5px 0.3px #fff;
+  text-decoration: none !important;
+  transition: 0.5s ease 0.05s;
+}
+/* line 71, ../sass/parts/_base.sass */
+footer a:hover {
+  color: #888 !important;
+}
+/* line 73, ../sass/parts/_base.sass */
 footer a h6 {
   font-size: calc(.7em + 1vw);
 }
@@ -461,7 +472,7 @@ nav {
 /* line 1, ../sass/parts/_section2.sass */
 #section2 {
   width: 100%;
-  height: 90vh;
+  min-height: 100vh;
   margin: 0;
   padding: 5vh 20px;
   background-image: url("../img/wp-blue-ice.png");
@@ -470,7 +481,7 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation-name: bgChange;
-  animation-duration: 20s;
+  animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -478,7 +489,7 @@ nav {
 @media (min-width: 700px) {
   /* line 1, ../sass/parts/_section2.sass */
   #section2 {
-    background-size: 60% auto;
+    background-size: auto 50%;
     background-position: center;
   }
 }
@@ -552,7 +563,7 @@ nav {
 /* line 74, ../sass/parts/_section2.sass */
 #screenSize {
   width: 50%;
-  margin: 20vh auto 5vh;
+  margin: 10vh auto 5vh;
   padding: 5px 0;
   background: linear-gradient(to right, #ffffff 2%, #333333 10%, #333333 90%, #ffffff 98%);
   animation: widthChange 5s linear 0s infinite alternate;
@@ -581,4 +592,103 @@ nav {
 #btnResult {
   padding: 10px;
   background: rgba(51, 51, 51, 0.8);
+}
+
+/* line 1, ../sass/parts/_section3.sass */
+#accordion {
+  width: 94%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/parts/_section3.sass */
+  #accordion {
+    width: 60%;
+  }
+}
+
+/* line 7, ../sass/parts/_section3.sass */
+.panel-heading {
+  margin: 0;
+  padding: 0;
+}
+/* line 10, ../sass/parts/_section3.sass */
+.panel-heading .panel-title {
+  margin: 0;
+  padding: 0;
+  background: rgba(230, 230, 230, 0.8);
+}
+/* line 14, ../sass/parts/_section3.sass */
+.panel-heading .panel-title a {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: #242424;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: 0.4px 0.4px #ef0003;
+  border: 1px solid #292929;
+  background: linear-gradient(to right, #ffffff, rgba(34, 34, 34, 0.5) 15%, rgba(255, 255, 255, 0.4), rgba(34, 34, 34, 0.5) 85%, #ffffff);
+  transition: 0.5s ease 0.05s;
+}
+/* line 26, ../sass/parts/_section3.sass */
+.panel-heading .panel-title a:hover {
+  color: #f8f8f8;
+  background: #282828;
+}
+@media (min-width: 700px) {
+  /* line 14, ../sass/parts/_section3.sass */
+  .panel-heading .panel-title a {
+    font-size: 2.5em;
+  }
+}
+
+/* line 33, ../sass/parts/_section3.sass */
+.panel-body {
+  color: #282828;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+/* line 38, ../sass/parts/_section3.sass */
+#contactMenu li {
+  font-size: 1.25em;
+  background: #c7c7c7;
+  margin: 5px auto;
+}
+@media (min-width: 700px) {
+  /* line 38, ../sass/parts/_section3.sass */
+  #contactMenu li {
+    font-size: 1.5em;
+  }
+}
+
+/* line 45, ../sass/parts/_section3.sass */
+iframe {
+  width: 96%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/parts/_section3.sass */
+#iconContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+@media (min-width: 700px) {
+  /* line 50, ../sass/parts/_section3.sass */
+  #iconContainer {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+/* line 56, ../sass/parts/_section3.sass */
+#iconContainer img {
+  width: 100%;
+  border: 1px solid #f8f8f8;
+  box-shadow: 1px 1px 5px #333;
+}
+/* line 60, ../sass/parts/_section3.sass */
+#iconContainer img:hover {
+  transform: scale(1.1);
 }
